@@ -2,26 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer utilities {
+  .Logos::before,
+  .Logos::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+  }
+  .Logos::before {
+    background: linear-gradient(
+      to right,
+      rgba(8, 47, 73, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    top: 0;
+    left: 0;
+  }
+  .Logos::after {
+    background: linear-gradient(
+      to left,
+      rgba(8, 47, 73, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    top: 0;
+    right: 0;
+  }
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .animateLogos {
+    animation: 35s slide infinite linear;
+  }
 }
