@@ -23,13 +23,13 @@
     content: "";
     height: 100%;
     position: absolute;
-    width: 15%;
+    width: 10%;
     z-index: 2;
   }
   .Logos::before {
     background: linear-gradient(
       to right,
-      rgba(8, 47, 73, 1) 0%,
+      rgba(8, 51, 68, 1) 0%,
       rgba(255, 255, 255, 0) 100%
     );
     top: 0;
@@ -38,7 +38,7 @@
   .Logos::after {
     background: linear-gradient(
       to left,
-      rgba(8, 47, 73, 1) 0%,
+      rgba(8, 51, 68, 1) 0%,
       rgba(255, 255, 255, 0) 100%
     );
     top: 0;
@@ -46,13 +46,118 @@
   }
   @keyframes slide {
     from {
-      transform: translateX(0);
+      transform: translateX(0%);
     }
     to {
       transform: translateX(-100%);
     }
   }
   .animateLogos {
-    animation: 35s slide infinite linear;
+    animation: 10s slide infinite linear;
+  }
+
+  .primary {
+    animation: primary 35s linear infinite;
+  }
+
+  .secondary {
+    animation: secondary 35s linear infinite;
+  }
+
+  @keyframes primary {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+
+  @keyframes secondary {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+
+  .envelopeContainer {
+    background-color: #718355;
+    position: relative;
+  }
+  .envelopeBack {
+    position: relative;
+    width: 320px;
+    height: 200px;
+    background-color: #718355;
+  }
+  .envelopeBack:before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.07);
+    width: 320px;
+    height: 10px;
+    border-radius: 50%;
+    top: 220px;
+  }
+  .card {
+    position: absolute;
+    width: 300px;
+    height: 180px;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: 0.1s;
+  }
+  .cardFront {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #87986a;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    top: 100px;
+    left: 0;
+    z-index: 3;
+  }
+  .cardFront:before,
+  .cardFront:after {
+    content: "";
+    position: absolute;
+    border-bottom: 100px solid transparent;
+    border-top: 100px solid transparent;
+    height: 0;
+    width: 0;
+  }
+  .cardFront:before {
+    border-left: 161px solid transparent;
+    border-right: 161px solid #97a97c;
+    top: -100px;
+    left: -162px;
+  }
+  .cardFront:after {
+    border-right: 169px solid transparent;
+    border-left: 161px solid #97a97c;
+    top: -100px;
+    right: -170px;
+  }
+  input[type="checkbox"] {
+    opacity: 0;
+  }
+  .flap {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 110px solid #b6c99a;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform-origin: top;
   }
 }

@@ -1,28 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useCallback } from "react";
-import { MouseEventHandler, SyntheticEvent, useEffect, useState } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { useState } from "react";
+import BURGER from "/public/images/burger.svg";
+import Image from "next/image";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [scrollFromTop, setScrollFromTop] = useState(false);
-
-  const pathname = usePathname();
-
-  const handleScroll = useCallback((event: Event) => {
-    const scrollPosition = (event.currentTarget as Window).scrollY;
-    setScrollFromTop(scrollPosition > 1);
-  }, []);
-
-  useEffect(() => {
-    window.onscroll = handleScroll;
-    return () => {
-      window.onscroll = null;
-    };
-  }, [handleScroll]);
 
   const handleClick = () => {
     setNavbarOpen((prev) => {
@@ -32,8 +16,7 @@ const Navbar = () => {
       return !prev;
     });
   };
-  // bg-gray-800/40
-  // backdrop-filter backdrop-blur-sm
+
   return (
     <nav className="h-14 z-10 border-b border-yellow-600 backdrop-filter bg-gray-800/40 backdrop-blur-sm sticky top-0 w-full transition-all duration-200 md:flex md:flex-row">
       <div className="pl-4 w-full h-full">
@@ -51,7 +34,7 @@ const Navbar = () => {
             onClick={handleClick}
             className="pr-4 md:hidden hover:text-slate-100"
           >
-            <RxHamburgerMenu style={{ height: "35px", width: "35px" }} />
+            <Image src={BURGER} alt="burgermenu" width="35" height="35" />
           </button>
         </div>
       </div>
@@ -63,16 +46,16 @@ const Navbar = () => {
         } `}
       >
         <li className=" text-slate-300 hover:text-slate-100 hover:underline underline-offset-8 decoration-1 decoration-yellow-500">
-          <a href="#home">HOME</a>
+          <Link href="#home">HOME</Link>
         </li>
         <li className="text-slate-300 hover:text-slate-100 hover:underline underline-offset-8 decoration-1 decoration-yellow-500">
-          <a href="#projects">PROJECTS</a>
+          <Link href="#projects">PROJECTS</Link>
         </li>
         <li className="text-slate-300 hover:text-slate-100 hover:underline underline-offset-8 decoration-1 decoration-yellow-500">
-          <a href="#contact">CONTACT</a>
+          <Link href="#contact">CONTACT</Link>
         </li>
         <li className="text-slate-300 hover:text-slate-100 hover:underline underline-offset-8 decoration-1 decoration-yellow-500">
-          <a href="#about">ABOUT</a>
+          <Link href="#about">ABOUT</Link>
         </li>
       </ul>
     </nav>
@@ -80,3 +63,19 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// import { MouseEventHandler, SyntheticEvent, useCallback, useEffect } from "react"
+
+// const [scrollFromTop, setScrollFromTop] = useState(false);
+
+// const handleScroll = useCallback((event: Event) => {
+//   const scrollPosition = (event.currentTarget as Window).scrollY;
+//   setScrollFromTop(scrollPosition > 1);
+// }, []);
+
+// useEffect(() => {
+//   window.onscroll = handleScroll;
+//   return () => {
+//     window.onscroll = null;
+//   };
+// }, [handleScroll]);

@@ -1,17 +1,11 @@
-"use client";
-
-import { motion } from "framer-motion";
+import ProjectCard from "./ProjectCard";
 import ProjectCardInfo from "./ProjectCardInfo";
-import dynamic from "next/dynamic";
-import Skillset from "./Skillset";
-
-const ProjectCard = dynamic(() => import("./ProjectCard"));
 
 const ProjectSection = () => {
   return (
-    <main className="border border-purple-500 pt-4 px-20 w-full h-full flex flex-col items-center">
-      <Skillset />
-      <div className="mt-4 py-20 gap-20 border-green-500 border w-full h-full flex flex-col items-center">
+    <main className="mt-0 sm:mt-10 w-full flex flex-col items-center">
+      <div className="gap-16 mt-10 sm:mt-14 w-[95%] h-1/2 flex flex-col justify-center items-center">
+        <p className="text-4xl">PROJECTS</p>
         {ProjectCardInfo.map((item: any) => (
           <ProjectCard
             key={item.title}
@@ -20,7 +14,7 @@ const ProjectSection = () => {
             imageWidth={item.imageWidth}
             imageHeight={item.imageHeight}
             demoUrl={item.demoUrl}
-            githubUrl={item.imageUrl}
+            githubUrl={item.githubUrl}
             title={item.title}
             description={item.description}
           />
