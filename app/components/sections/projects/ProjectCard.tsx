@@ -9,7 +9,7 @@ interface ProjectCardProps {
   imageWidth: number;
   imageHeight: number;
   demoUrl: string;
-  githubUrl: string;
+  githubUrl?: string;
   title: string;
   description: string;
 }
@@ -50,16 +50,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 Site
               </button>
             </Link>
-            <Link
-              href={githubUrl}
-              rel="noopener noreferrer"
-              target="_blank"
-              className="w-24 h-8 rounded-md relative bg-yellow-600"
-            >
-              <button className="w-24 h-8 text-xl absolute rounded-md bg-sky-950 border border-yellow-600 text-slate-300 hover:text-slate-100 top-[2px] left-[1px] active:top-0 active:left-0">
-                Source
-              </button>
-            </Link>
+            {githubUrl ? (
+              <Link
+                href={githubUrl}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="w-24 h-8 rounded-md relative bg-yellow-600"
+              >
+                <button className="w-24 h-8 text-xl absolute rounded-md bg-sky-950 border border-yellow-600 text-slate-300 hover:text-slate-100 top-[2px] left-[1px] active:top-0 active:left-0">
+                  Source
+                </button>
+              </Link>
+            ) : null}
           </div>
         </div>
         <p className="flex text-xl">{description}</p>
