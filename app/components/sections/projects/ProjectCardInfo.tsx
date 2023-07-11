@@ -1,5 +1,14 @@
 export const ProjectCardInfo = [
   {
+    imageSrc: "/images/projects/shortcutwizard.jpg",
+    imageAlt: "shortcut wizard",
+    imageWidth: 450,
+    imageHeight: 450,
+    demoUrl: "https://shortcut-wizard.vercel.app/",
+    title: "Shortcut Wizard",
+    description: `Currently working on this SaaS project implementing Clerk and Stripe.`,
+  },
+  {
     imageSrc: "/images/projects/epicsaas.jpg",
     imageAlt: "epic saas",
     imageWidth: 450,
@@ -19,18 +28,8 @@ export const ProjectCardInfo = [
     githubUrl: "https://github.com/crackcodesprogramloads/tetris",
     title: "Tetris",
     description:
-      "The game that defines nostalgia, I had a lot of fun building this React project",
+      "The game that defines nostalgia, I had a lot of fun building this React project.",
   },
 ];
 
 export default ProjectCardInfo;
-
-// {
-//   imageSrc: "/images/projects/shortcutwizard.jpg",
-//   imageAlt: "shortcut wizard",
-//   imageWidth: 450,
-//   imageHeight: 450,
-//   demoUrl: "https://shortcut-wizard.vercel.app/",
-//   title: "Shortcut Wizard",
-//   description: `UI for a client with 3d cards using framer motion`,
-// },
