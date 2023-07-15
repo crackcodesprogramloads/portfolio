@@ -30,7 +30,7 @@ const Sidebar = () => {
         rel="noopener noreferrer"
         target="_blank"
         aria-label="upwork"
-        href="https://www.upwork.com/"
+        href="https://www.upwork.com/freelancers/~0100e3bc944528354e"
       >
         <svg
           stroke="currentColor"
