@@ -6,7 +6,7 @@ export const ProjectCardInfo = [
     imageHeight: 450,
     demoUrl: "https://shortcut-wizard.vercel.app/",
     title: "Shortcut Wizard",
-    description: `Currently working on this SaaS project implementing Clerk and Stripe.`,
+    description: `SaaS project for a client implementing Clerk and Stripe. Code is private until app launch next month.`,
   },
   {
     imageSrc: "/images/projects/epicsaas.jpg",
