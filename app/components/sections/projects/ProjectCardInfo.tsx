@@ -1,5 +1,15 @@
 export const ProjectCardInfo = [
   {
+    imageSrc: "/images/projects/spotify.jpg",
+    imageAlt: "spotify clone",
+    imageWidth: 450,
+    imageHeight: 450,
+    demoUrl: "https://spotify-clone-portfolio.vercel.app/",
+    githubUrl: "https://github.com/crackcodesprogramloads/spotify-clone",
+    title: "Spotify Clone",
+    description: `Spotify clone with auth, database and payment system.`,
+  },
+  {
     imageSrc: "/images/projects/shortcutwizard.jpg",
     imageAlt: "shortcut wizard",
     imageWidth: 450,
