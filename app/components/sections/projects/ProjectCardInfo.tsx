@@ -23,7 +23,7 @@ export const ProjectCardInfo = [
     imageAlt: "epic saas",
     imageWidth: 450,
     imageHeight: 450,
-    demoUrl: "https://epic-saas-next.vercel.app/",
+    demoUrl: "https://epic-saas-three.vercel.app/",
     githubUrl: "https://github.com/crackcodesprogramloads/epic-saas",
     title: "Epic Saas",
     description: `A full stack "Software as a service" project with authentication and
