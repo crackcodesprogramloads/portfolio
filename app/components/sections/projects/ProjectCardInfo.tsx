@@ -1,5 +1,14 @@
 export const ProjectCardInfo = [
   {
+    imageSrc: "/images/projects/shortcutwizard.jpg",
+    imageAlt: "shortcut wizard",
+    imageWidth: 450,
+    imageHeight: 450,
+    demoUrl: "https://shortcutwizard.app/",
+    title: "Shortcut Wizard",
+    description: `I collaborated with a software engineer to build a web and desktop app that allows users to quickly access their favorite keyboard shortcuts on the fly! Code is private until app launch next month.`,
+  },
+  {
     imageSrc: "/images/projects/spotify.jpg",
     imageAlt: "spotify clone",
     imageWidth: 450,
@@ -8,15 +17,6 @@ export const ProjectCardInfo = [
     githubUrl: "https://github.com/crackcodesprogramloads/spotify-clone",
     title: "Spotify Clone",
     description: `Spotify clone with auth, database and payment system.`,
-  },
-  {
-    imageSrc: "/images/projects/shortcutwizard.jpg",
-    imageAlt: "shortcut wizard",
-    imageWidth: 450,
-    imageHeight: 450,
-    demoUrl: "https://shortcut-wizard.vercel.app/",
-    title: "Shortcut Wizard",
-    description: `SaaS project for a client implementing Clerk and Stripe. Code is private until app launch next month.`,
   },
   {
     imageSrc: "/images/projects/epicsaas.jpg",
