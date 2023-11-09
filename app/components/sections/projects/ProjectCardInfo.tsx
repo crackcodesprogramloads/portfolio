@@ -6,7 +6,7 @@ export const ProjectCardInfo = [
     imageHeight: 450,
     demoUrl: "https://shortcutwizard.app/",
     title: "Shortcut Wizard",
-    description: `I collaborated with a software engineer to build a web and desktop app that allows users to quickly access their favorite keyboard shortcuts on the fly! Code is private until app launch next month.`,
+    description: `A team effort first product launch! A desktop app that allows users to quickly access their favorite keyboard shortcuts on the fly!`,
   },
   {
     imageSrc: "/images/projects/spotify.jpg",
