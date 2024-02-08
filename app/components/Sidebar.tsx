@@ -68,29 +68,6 @@ const Sidebar = () => {
           <path d="M3 7v5a3 3 0 0 0 6 0v-5h1l4 6c.824 1.319 1.945 2 3.5 2a3.5 3.5 0 0 0 0 -7c-2.027 0 -3.137 1 -3.5 3c-.242 1.33 -.908 4 -2 8"></path>
         </svg>
       </Link>
-      <Link
-        className="hover:mb-0.5"
-        rel="noopener noreferrer"
-        target="_blank"
-        aria-label="fiverr"
-        href="https://www.fiverr.com/mike_padial/build-you-a-responsive-website-with-a-professional-ui"
-      >
-        <svg
-          stroke="currentColor"
-          fill="none"
-          strokeWidth="2"
-          viewBox="0 0 24 24"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="text-4xl sm:text-5xl py-1 hover:text-slate-100"
-          height="1em"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <path d="M15 3h-2a6 6 0 0 0 -6 6h-3v4h3v8h4v-7h4v7h4v-11h-8v-1.033a1.967 1.967 0 0 1 2 -1.967h2v-4z"></path>
-        </svg>
-      </Link>
       <Link className="hover:mb-0.5" aria-label="email" href="#contact">
         <svg
           stroke="currentColor"
