@@ -1,5 +1,25 @@
 export const ProjectCardInfo = [
   {
+    imageSrc: "/images/projects/cryptotwitter.jpg",
+    imageAlt: "crypto twitter scam shield",
+    imageWidth: 450,
+    imageHeight: 450,
+    demoUrl:
+      "https://chromewebstore.google.com/detail/crypto-twitter-scam-shiel/jncnooeffigcacclopoekhabeocbhbij",
+    title: "Crypto Twitter Scam Shield",
+    description: `A chrome extension to help prevent interacting with malicious content posted by scammers on X/Twitter`,
+  },
+  {
+    imageSrc: "/images/projects/switchlane.jpg",
+    imageAlt: "switchlane",
+    imageWidth: 450,
+    imageHeight: 450,
+    demoUrl: "https://www.switchlane.xyz/",
+    githubUrl: "https://github.com/crackcodesprogramloads/switchlane",
+    title: "Chainlink Hackathon",
+    description: `I built the frontend UI, connecting it with our blockchain smart contract enabling gasless, crosschain transactions.`,
+  },
+  {
     imageSrc: "/images/projects/shortcutwizard.jpg",
     imageAlt: "shortcut wizard",
     imageWidth: 450,
