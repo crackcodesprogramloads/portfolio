@@ -5,6 +5,7 @@ export const ProjectCardInfo = [
     imageWidth: 450,
     imageHeight: 450,
     demoUrl: "https://chromewebstore.google.com/detail/crypto-twitter-scam-shiel/jncnooeffigcacclopoekhabeocbhbij",
+    githubUrl: "https://github.com/crackcodesprogramloads/crypto-twitter-scam-shield",
     title: "Crypto Twitter Scam Shield",
     description: `A React Chrome extension that injects UI changes into the Twitter/X DOM and fetches users following lists from an API via an AWS Lambda function.`,
   },
