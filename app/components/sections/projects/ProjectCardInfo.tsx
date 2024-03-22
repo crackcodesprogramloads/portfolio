@@ -1,13 +1,12 @@
 export const ProjectCardInfo = [
   {
-    imageSrc: "/images/projects/cryptotwitter.jpg",
-    imageAlt: "crypto twitter scam shield",
+    imageSrc: "/images/projects/shortcutwizard.jpg",
+    imageAlt: "shortcut wizard",
     imageWidth: 450,
     imageHeight: 450,
-    demoUrl: "https://chromewebstore.google.com/detail/crypto-twitter-scam-shiel/jncnooeffigcacclopoekhabeocbhbij",
-    githubUrl: "https://github.com/crackcodesprogramloads/crypto-twitter-scam-shield",
-    title: "Crypto Twitter Scam Shield",
-    description: `A React Chrome extension that injects UI changes into the Twitter/X DOM and fetches users following lists from an API via an AWS Lambda function.`,
+    demoUrl: "https://shortcutwizard.app/",
+    title: "Shortcut Wizard",
+    description: `I built the frontend UI with Tailwind for a clients startup. I also became familiar with the process of building desktop apps in Electron.`,
   },
   {
     imageSrc: "/images/projects/switchlane.jpg",
@@ -20,15 +19,6 @@ export const ProjectCardInfo = [
     description: `I built the frontend UI with Tailwind, implemented an EIP-4337 smart wallet and connected it to my teammates crosschain smart contract.`,
   },
   {
-    imageSrc: "/images/projects/shortcutwizard.jpg",
-    imageAlt: "shortcut wizard",
-    imageWidth: 450,
-    imageHeight: 450,
-    demoUrl: "https://shortcutwizard.app/",
-    title: "Shortcut Wizard",
-    description: `I built the frontend UI with Tailwind for a clients startup. I also became familiar with the process of building desktop apps in Electron.`,
-  },
-  {
     imageSrc: "/images/projects/spotify.jpg",
     imageAlt: "spotify clone",
     imageWidth: 450,
@@ -39,14 +29,14 @@ export const ProjectCardInfo = [
     description: `Spotify clone with auth, database and payment system.`,
   },
   {
-    imageSrc: "/images/projects/tetris.jpg",
-    imageAlt: "tetris",
+    imageSrc: "/images/projects/cryptotwitter.jpg",
+    imageAlt: "crypto twitter scam shield",
     imageWidth: 450,
     imageHeight: 450,
-    demoUrl: "https://tetris-project-app.netlify.app/",
-    githubUrl: "https://github.com/crackcodesprogramloads/tetris",
-    title: "Tetris",
-    description: "The game that defines nostalgia, I had a lot of fun building this React project.",
+    demoUrl: "https://chromewebstore.google.com/detail/crypto-twitter-scam-shiel/jncnooeffigcacclopoekhabeocbhbij",
+    githubUrl: "https://github.com/crackcodesprogramloads/crypto-twitter-scam-shield",
+    title: "Crypto Twitter Scam Shield",
+    description: `A React Chrome extension that injects UI changes into the Twitter/X DOM and fetches users following lists from an API via an AWS Lambda function.`,
   },
   {
     imageSrc: "/images/projects/epicsaas.jpg",
@@ -58,6 +48,16 @@ export const ProjectCardInfo = [
     title: "Epic Saas",
     description: `A full stack "Software as a service" project with authentication and
     payment. Built with NextJs, Supabase and Stripe.`,
+  },
+  {
+    imageSrc: "/images/projects/tetris.jpg",
+    imageAlt: "tetris",
+    imageWidth: 450,
+    imageHeight: 450,
+    demoUrl: "https://tetris-project-app.netlify.app/",
+    githubUrl: "https://github.com/crackcodesprogramloads/tetris",
+    title: "Tetris",
+    description: "The game that defines nostalgia, I had a lot of fun building this React project.",
   },
 ];
 
