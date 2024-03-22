@@ -53,14 +53,8 @@ const ContactForm = () => {
         theme="dark"
         autoClose={5000}
         pauseOnHover={false}
-        toastClassName={(context) =>
-          context?.defaultClassName
-            ? `${context.defaultClassName} !rounded-lg`
-            : ""
-        }
-        bodyClassName={() =>
-          "!w-full !text-2xl !flex !justify-center !items-center"
-        }
+        toastClassName={(context) => (context?.defaultClassName ? `${context.defaultClassName} !rounded-lg` : "")}
+        bodyClassName={() => "!w-full !text-2xl !flex !justify-center !items-center"}
       />
       <LazyMotion features={domAnimation}>
         <m.div
@@ -107,10 +101,7 @@ const ContactForm = () => {
             }}
             className="backdrop-filter bg-slate-800/90 backdrop-blur-sm card rounded-2xl shadow-2xl flex flex-col justify-center items-center my-10 sm:my-0 px-4 sm:px-8 border-yellow-600  text-slate-300"
           >
-            <form
-              onSubmit={handleSubmit}
-              className="w-[60%] sm:w-[90%] h-[80%] sm:h-[90%] pt-10 flex flex-col items-center justify-around"
-            >
+            <form onSubmit={handleSubmit} className="w-[60%] sm:w-[90%] h-[80%] sm:h-[90%] pt-10 flex flex-col items-center justify-around">
               <h1 className="mb-2 text-xl">CONTACT</h1>
 
               <div className="my-1 p-2 rounded-lg bg-transparent flex flex-col w-full text-sm">
