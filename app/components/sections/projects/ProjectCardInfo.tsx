@@ -1,14 +1,5 @@
 export const ProjectCardInfo = [
   {
-    imageSrc: "/images/projects/shortcutwizard.jpg",
-    imageAlt: "shortcut wizard",
-    imageWidth: 450,
-    imageHeight: 450,
-    demoUrl: "https://shortcutwizard.app/",
-    title: "Shortcut Wizard",
-    description: `I built the frontend UI with Tailwind for a clients startup. I also became familiar with the process of building desktop apps in Electron.`,
-  },
-  {
     imageSrc: "/images/projects/switchlane.jpg",
     imageAlt: "switchlane",
     imageWidth: 450,
@@ -19,16 +10,6 @@ export const ProjectCardInfo = [
     description: `I built the frontend UI with Tailwind, implemented an EIP-4337 smart wallet and connected it to my teammates crosschain smart contract.`,
   },
   {
-    imageSrc: "/images/projects/spotify.jpg",
-    imageAlt: "spotify clone",
-    imageWidth: 450,
-    imageHeight: 450,
-    demoUrl: "https://spotify-clone-portfolio.vercel.app/",
-    githubUrl: "https://github.com/crackcodesprogramloads/spotify-clone",
-    title: "Spotify Clone",
-    description: `Spotify clone with auth, database and payment system.`,
-  },
-  {
     imageSrc: "/images/projects/cryptotwitter.jpg",
     imageAlt: "crypto twitter scam shield",
     imageWidth: 450,
@@ -37,6 +18,25 @@ export const ProjectCardInfo = [
     githubUrl: "https://github.com/crackcodesprogramloads/crypto-twitter-scam-shield",
     title: "Crypto Twitter Scam Shield",
     description: `A React Chrome extension that injects UI changes into the Twitter/X DOM and fetches users following lists from an API via an AWS Lambda function.`,
+  },
+  {
+    imageSrc: "/images/projects/shortcutwizard.jpg",
+    imageAlt: "shortcut wizard",
+    imageWidth: 450,
+    imageHeight: 450,
+    demoUrl: "https://shortcutwizard.app/",
+    title: "Shortcut Wizard",
+    description: `I built the frontend UI with Tailwind for a clients startup. I also became familiar with the process of building desktop apps in Electron.`,
+  },
+  {
+    imageSrc: "/images/projects/spotify.jpg",
+    imageAlt: "spotify clone",
+    imageWidth: 450,
+    imageHeight: 450,
+    demoUrl: "https://spotify-clone-portfolio.vercel.app/",
+    githubUrl: "https://github.com/crackcodesprogramloads/spotify-clone",
+    title: "Spotify Clone",
+    description: `Spotify clone with auth, database and payment system.`,
   },
   {
     imageSrc: "/images/projects/epicsaas.jpg",
