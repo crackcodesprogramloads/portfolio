@@ -10,8 +10,7 @@ const Navbar = () => {
 
   const handleClick = () => {
     setNavbarOpen((prev) => {
-      if (prev)
-        document.body.classList.remove("overflow-hidden", "md:overflow-auto");
+      if (prev) document.body.classList.remove("overflow-hidden", "md:overflow-auto");
       else document.body.classList.add("overflow-hidden", "md:overflow-auto");
       return !prev;
     });
@@ -30,19 +29,14 @@ const Navbar = () => {
             </div>
           </a>
 
-          <button
-            onClick={handleClick}
-            className="pr-4 md:hidden hover:text-slate-100"
-          >
+          <button onClick={handleClick} className="pr-4 md:hidden hover:text-slate-100">
             <Image src={BURGER} alt="burgermenu" width="35" height="35" />
           </button>
         </div>
       </div>
       <ul
         className={`sticky left-0 text-3xl md:text-xl h-full space-y-8 pt-8 pl-8 transform transition duration-200 md:w-full md:h-full md:flex md:flex-row md:items-center md:justify-end md:relative md:min-h-0 md:space-y-0 md:space-x-6 md:p-0 md:pr-4 md:translate-x-0 ${
-          navbarOpen
-            ? "translate-x-0 md:bg-transparent w-full h-screen bg-gray-800/80"
-            : "translate-x-full pl-12"
+          navbarOpen ? "md:bg-transparent w-full h-screen bg-gray-800/80" : "hidden"
         } `}
       >
         <li className=" text-slate-300 hover:text-slate-100 hover:underline underline-offset-8 decoration-1 decoration-yellow-500">
