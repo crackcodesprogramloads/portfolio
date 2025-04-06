@@ -24,7 +24,7 @@ export const ProjectCardInfo = [
     imageAlt: "shortcut wizard",
     imageWidth: 450,
     imageHeight: 450,
-    demoUrl: "https://shortcutwizard.app/",
+    demoUrl: "https://shortcut-wizard.vercel.app/",
     title: "Shortcut Wizard",
     description: `I built the frontend UI with Tailwind for a clients startup. I also became familiar with the process of building desktop apps in Electron.`,
   },
